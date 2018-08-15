@@ -1,4 +1,4 @@
-package spr.main.config;
+package main.config;
 
 public class Bean1 {
 

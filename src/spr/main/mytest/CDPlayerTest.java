@@ -3,7 +3,7 @@ package spr.main.mytest;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
-import spr.main.config.Bean1;
+import main.config.Bean1;
 import spr.main.config.JavaConfig;
 
 @ContextConfiguration(classes = JavaConfig.class)

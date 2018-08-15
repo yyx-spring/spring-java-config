@@ -1,5 +1,6 @@
 package spr.main.config;
 
+import main.config.Bean1;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
