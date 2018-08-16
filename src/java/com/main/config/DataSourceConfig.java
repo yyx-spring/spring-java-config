@@ -87,7 +87,7 @@ public class DataSourceConfig {
     @Value("${spring.datasource.filters}")
     private String filters;
 
-    @Value("{spring.datasource.connectionProperties}")
+    @Value("${spring.datasource.connectionProperties}")
     private String connectionProperties;
 
     @Bean     //声明其为Bean实例
