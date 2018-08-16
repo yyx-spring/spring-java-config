@@ -1,18 +1,14 @@
 package com.main.config;
 
-import java.io.IOException;
-import java.sql.SQLException;
-import java.util.Properties;
-
-import javax.sql.DataSource;
-
+import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.log4j.Logger;
 import org.mybatis.spring.SqlSessionFactoryBean;
-import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
+import org.springframework.core.env.Environment;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -20,7 +16,10 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
 import org.springframework.transaction.interceptor.TransactionInterceptor;
 
-import com.alibaba.druid.pool.DruidDataSource;
+import javax.sql.DataSource;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.Properties;
 
 /**
  *<p>Title: DruidDataSourceConfig.java</p>
@@ -30,9 +29,12 @@ import com.alibaba.druid.pool.DruidDataSource;
  *@version v1.0
  */
 @Configuration
-@PropertySource("classpath:/jdbc.properties")
+@PropertySource("classpath:jdbc.properties")
 //@MapperScan(basePackages="com.open.ssm.dao")  //mybatis
 public class DataSourceConfig {
+
+    @Autowired
+    Environment environment;
 
     private final static Logger LOG = Logger.getLogger(DataSourceConfig.class);
 
@@ -89,6 +91,12 @@ public class DataSourceConfig {
 
     @Value("${spring.datasource.connectionProperties}")
     private String connectionProperties;
+
+    /*@Bean
+    public static PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer() {
+        PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer = new PropertySourcesPlaceholderConfigurer();
+        return propertySourcesPlaceholderConfigurer;
+    }*/
 
     @Bean     //声明其为Bean实例
     public DataSource dataSource(){
