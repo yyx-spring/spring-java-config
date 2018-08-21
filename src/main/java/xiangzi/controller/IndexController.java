@@ -31,7 +31,7 @@ public class IndexController {
 
     @RequestMapping("index")
     public String index() {
-        String str = "XXXX\n";
+        String str = "Welcome<br/>";
         return str + type;
     }
 
