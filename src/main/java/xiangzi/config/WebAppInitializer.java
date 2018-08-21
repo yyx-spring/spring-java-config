@@ -1,4 +1,4 @@
-package main.java.config;
+package xiangzi.config;
 
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;

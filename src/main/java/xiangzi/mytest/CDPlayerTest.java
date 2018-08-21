@@ -1,7 +1,7 @@
-package main.java.mytest;
+package xiangzi.mytest;
 
-import main.java.domain.Bean1;
 import org.springframework.beans.factory.annotation.Autowired;
+import xiangzi.domain.Bean1;
 
 //@ContextConfiguration(classes = JavaConfig.class)
 public class CDPlayerTest {

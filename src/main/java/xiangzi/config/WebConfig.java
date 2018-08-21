@@ -1,4 +1,4 @@
-package main.java.config;
+package xiangzi.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
@@ -27,7 +27,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
  */
 @Configuration
 @EnableWebMvc   //<mvc:annotation-driven>启用注解驱动
-@ComponentScan( "main.java.controller" )
+@ComponentScan( "xiangzi.controller" )
 public class WebConfig extends WebMvcConfigurerAdapter {
 
     //视图解析配置

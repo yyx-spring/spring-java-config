@@ -1,4 +1,4 @@
-package main.java.config;
+package xiangzi.config;
 
 import org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator;
 import org.springframework.context.annotation.Bean;

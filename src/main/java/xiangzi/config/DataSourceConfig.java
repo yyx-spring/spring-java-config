@@ -1,4 +1,4 @@
-package main.java.config;
+package xiangzi.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
 import org.apache.log4j.Logger;
