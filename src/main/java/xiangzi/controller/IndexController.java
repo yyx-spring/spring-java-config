@@ -31,7 +31,7 @@ public class IndexController {
 
     @RequestMapping("index")
     public String index() {
-        String str = "Welcome<br/>";
+        String str = "Hello@<br/>";
         return str + type;
     }
 
