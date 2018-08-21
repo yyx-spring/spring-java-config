@@ -31,7 +31,7 @@ public class IndexController {
 
     @RequestMapping("index")
     public String index() {
-        String str = "reload";
+        String str = "reload2";
         return str + type;
     }
 
