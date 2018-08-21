@@ -1,16 +1,18 @@
-package com.main.controller;
+package main.java.controller;
 
-import com.main.config.DataSourceConfig;
-import com.main.config.RootConfig;
-import com.main.config.WebConfig;
+import main.java.config.DataSourceConfig;
+import main.java.config.RootConfig;
+import main.java.config.WebConfig;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-public class IndexController {
+@Profile("test")
+//@Scope(WebApplicationContext.SCOPE_SESSION)
+public class ProfileController {
     /*@Autowired
     private IndexService indexService;
 */
@@ -21,17 +23,12 @@ public class IndexController {
     RootConfig rootConfig;
     @Autowired
     WebConfig webConfig;
-//    @Autowired
-//    PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer;
-    @Autowired
-    ProfileController profileController;
-    @Value("${spring.datasource.type}")
-    private String type;
 
 
-    @RequestMapping("index")
+
+    @RequestMapping("test")
     public String index() {
-        return "THIS IS A TEST.WELCOME" + type;
+        return "THIS IS A TEST.WELCOME";
     }
 
     /*@RequestMapping("getData")

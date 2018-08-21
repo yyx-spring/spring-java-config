@@ -1,6 +1,5 @@
-package main.config;
-import com.main.config.RootConfig;
-import com.main.config.WebConfig;
+package main.java.config;
+
 import org.apache.log4j.Logger;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 /**

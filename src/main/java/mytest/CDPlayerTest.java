@@ -1,6 +1,6 @@
-package com.main.mytest;
+package main.java.mytest;
 
-import com.main.domain.Bean1;
+import main.java.domain.Bean1;
 import org.springframework.beans.factory.annotation.Autowired;
 
 //@ContextConfiguration(classes = JavaConfig.class)
