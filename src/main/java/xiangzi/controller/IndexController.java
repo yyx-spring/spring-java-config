@@ -31,7 +31,8 @@ public class IndexController {
 
     @RequestMapping("index")
     public String index() {
-        return "THIS IS A TEST.WELCOME" + type;
+        String str = "reload";
+        return str + type;
     }
 
     /*@RequestMapping("getData")
