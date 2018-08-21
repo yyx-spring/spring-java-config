@@ -20,11 +20,11 @@
                 <configuration>
                     <warName>${project.artifactId}</warName>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
-                    <!--<webResources>
+                    <webResources>
                         <resource>
-                            <directory>web</directory>
+                            <directory>webapp</directory>
                         </resource>
-                    </webResources>-->
+                    </webResources>
                 </configuration>
             </plugin>
         </plugins>
