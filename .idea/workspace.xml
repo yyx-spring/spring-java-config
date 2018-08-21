@@ -7,15 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22b8a0d5-3035-4835-a17d-9ce32ddaefdb" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/src/java/com/main/controller/ProfileController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_java_config_war.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_java_config_war.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/spring_java_config_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/spring_java_config_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/java/com/main/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/java/com/main/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/jdbc.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-java-config.iml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-java-config.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/src/resources/target/" />
     <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="D:\project\spring\spring-java-config\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,114 +56,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WebConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/main/config/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2079#2080#0" expanded="true" />
-                <element signature="e#2114#2115#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebAppInitializer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/main/config/WebAppInitializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebMvcConfigurerAdapter.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.0.RELEASE/spring-webmvc-4.3.0.RELEASE.jar!/org/springframework/web/servlet/config/annotation/WebMvcConfigurerAdapter.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnnotationConfigApplicationContext.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="13" column="47" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RootConfig.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/main/config/RootConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DataSourceConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+            <state relative-caret-position="-75">
+              <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1368#1394#1" expanded="true" />
-                <element signature="e#2757#2787#1" expanded="true" />
-                <element signature="e#2829#2872#1" expanded="true" />
+                <element signature="e#1473#1499#1" expanded="true" />
+                <element signature="e#1687#1725#1" expanded="true" />
+                <element signature="e#1921#1953#1" expanded="true" />
+                <element signature="e#1994#2024#1" expanded="true" />
+                <element signature="e#2063#2115#1" expanded="true" />
+                <element signature="e#2176#2225#1" expanded="true" />
+                <element signature="e#2283#2321#1" expanded="true" />
+                <element signature="e#2371#2407#1" expanded="true" />
+                <element signature="e#2456#2491#1" expanded="true" />
+                <element signature="e#2539#2574#1" expanded="true" />
+                <element signature="e#2725#2789#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jdbc.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resources/jdbc.properties">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ProfileController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/java/com/main/controller/ProfileController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConfigurableBeanFactory.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.0.RELEASE/spring-beans-4.3.0.RELEASE.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IndexController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/java/com/main/controller/IndexController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#632#633#0" expanded="true" />
-                <element signature="e#679#680#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="330">
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="20" selection-end-line="26" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -191,8 +112,13 @@
       <find>ComponentScan</find>
       <find>EnableWebMvc</find>
       <find>PropertySource`</find>
-      <find>PropertySource</find>
       <find>env</find>
+      <find>PropertySource</find>
+      <find>PropertySourcesPlaceholderConfigurer</find>
+      <find>PlaceholderConfigurer</find>
+      <find>place</find>
+      <find>StringValueResolver</find>
+      <find>```</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,7 +141,6 @@
         <option value="$PROJECT_DIR$/src/spr/main/config/a.java" />
         <option value="$PROJECT_DIR$/src/spr/main/mytest/CDPlayerTest.java" />
         <option value="$PROJECT_DIR$/src/resources/pom.xml" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/spr/main/config/WebProjectConfigInitializer.java" />
         <option value="$PROJECT_DIR$/src/spr/main/config/JavaConfig.java" />
         <option value="$PROJECT_DIR$/src/com/main/config/WebProjectConfigInitializer.java" />
@@ -228,11 +153,12 @@
         <option value="$PROJECT_DIR$/src/java/com/main/mytest/CDPlayerTest.java" />
         <option value="$PROJECT_DIR$/src/java/com/main/config/RootConfig.java" />
         <option value="$PROJECT_DIR$/src/java/com/main/controller/IndexController.java" />
-        <option value="$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/resources/jdbc.properties" />
         <option value="$PROJECT_DIR$/src/java/com/main/config/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/java/com/main/config/WebAppInitializer.java" />
+        <option value="$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/java/com/main/controller/ProfileController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -259,6 +185,17 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="spring Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="war" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="spring Maven Webapp" type="9519ce18:MavenProjectsStructure$ProjectNode" />
           <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
@@ -266,10 +203,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="20" />
-    <option name="y" value="20" />
-    <option name="width" value="1400" />
-    <option name="height" value="820" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -279,8 +216,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -365,12 +300,15 @@
         </subPane>
         <option name="show-excluded-files" value="false" />
       </pane>
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SearchEverywhereHistoryKey" value="propertysourcePl&#9;PSI&#9;JAVA://org.springframework.context.support.PropertySourcesPlaceholderConfigurer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1534060769846" />
@@ -505,7 +443,9 @@
       <updated>1534056549454</updated>
       <workItem from="1534056554745" duration="3796000" />
       <workItem from="1534324003723" duration="6997000" />
-      <workItem from="1534383091307" duration="8930000" />
+      <workItem from="1534383091307" duration="13584000" />
+      <workItem from="1534730333747" duration="6508000" />
+      <workItem from="1534816327164" duration="2646000" />
     </task>
     <task id="LOCAL-00001" summary="Default Changelist">
       <created>1534325754793</created>
@@ -521,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534330998263</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Default Changelist">
+      <created>1534416414533</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534416414533</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -554,7 +501,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19723000" />
+    <option name="totallyTimeSpent" value="33531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -563,7 +510,7 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="8" weight="0.32925472" />
-      <window_info anchor="right" id="Maven Projects" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="3" visible="true" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -571,28 +518,28 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.40044492" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40044492" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32925472" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32925472" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32925472" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24520256" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17803837" />
       <window_info id="Web" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32925472" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -636,14 +583,59 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/java/com/main/controller/IndexController.java</url>
-          <line>29</line>
+          <line>31</line>
           <properties />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java</url>
+          <line>102</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="7" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="12" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1473#1499#1" expanded="true" />
+            <element signature="e#1687#1725#1" expanded="true" />
+            <element signature="e#1921#1953#1" expanded="true" />
+            <element signature="e#1994#2024#1" expanded="true" />
+            <element signature="e#2063#2115#1" expanded="true" />
+            <element signature="e#2176#2225#1" expanded="true" />
+            <element signature="e#2283#2321#1" expanded="true" />
+            <element signature="e#2371#2407#1" expanded="true" />
+            <element signature="e#2456#2491#1" expanded="true" />
+            <element signature="e#2539#2574#1" expanded="true" />
+            <element signature="e#2725#2789#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/main/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="465">
@@ -667,10 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#74#75#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -695,9 +683,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -717,9 +702,17 @@
           <caret line="32" column="14" lean-forward="true" selection-start-line="32" selection-start-column="14" selection-end-line="32" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1368#1394#1" expanded="true" />
-            <element signature="e#2757#2787#1" expanded="true" />
-            <element signature="e#2829#2872#1" expanded="true" />
+            <element signature="e#1473#1499#1" expanded="true" />
+            <element signature="e#1687#1725#1" expanded="true" />
+            <element signature="e#1921#1953#1" expanded="true" />
+            <element signature="e#1994#2024#1" expanded="true" />
+            <element signature="e#2063#2115#1" expanded="true" />
+            <element signature="e#2176#2225#1" expanded="true" />
+            <element signature="e#2283#2321#1" expanded="true" />
+            <element signature="e#2371#2407#1" expanded="true" />
+            <element signature="e#2456#2491#1" expanded="true" />
+            <element signature="e#2539#2574#1" expanded="true" />
+            <element signature="e#2725#2789#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -730,7 +723,6 @@
           <caret line="26" column="27" lean-forward="true" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
             <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
@@ -766,10 +758,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
-          <folding>
-            <element signature="e#74#75#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -777,9 +765,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -788,13 +773,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2805">
-          <caret line="187" column="21" selection-start-line="183" selection-start-column="8" selection-end-line="187" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -809,10 +787,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#74#75#0" expanded="true" />
-            <element signature="e#135#136#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -820,9 +794,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="5" column="23" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -840,27 +811,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/annotation/PropertySource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/resources/jdbc.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/RootConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -880,11 +834,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/main/controller/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="14" selection-start-line="23" selection-start-column="14" selection-end-line="23" selection-end-column="14" />
+        <state relative-caret-position="390">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#632#633#0" expanded="true" />
             <element signature="e#679#680#0" expanded="true" />
           </folding>
         </state>
@@ -897,10 +850,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.0.RELEASE/spring-beans-4.3.0.RELEASE.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/WebAppInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/main/config/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="57" column="5" selection-start-line="57" selection-start-column="5" selection-end-line="57" selection-end-column="5" />
+        <state relative-caret-position="201">
+          <caret line="27" column="14" lean-forward="true" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2079#2080#0" expanded="true" />
@@ -909,40 +879,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/RootConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1368#1394#1" expanded="true" />
-            <element signature="e#2757#2787#1" expanded="true" />
-            <element signature="e#2829#2872#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/WebAppInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="80" selection-start-line="21" selection-start-column="80" selection-end-line="21" selection-end-column="80" />
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.3.0.RELEASE/spring-beans-4.3.0.RELEASE.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.class">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/support/PropertySourcesPlaceholderConfigurer.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="21" selection-end-column="11" />
+        <state relative-caret-position="142">
+          <caret line="73" column="27" selection-start-line="73" selection-start-column="8" selection-end-line="73" selection-end-column="27" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/java/com/main/controller/ProfileController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="120">
+          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.0.RELEASE/spring-context-4.3.0.RELEASE.jar!/org/springframework/context/annotation/PropertySource.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/java/com/main/config/DataSourceConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1473#1499#1" expanded="true" />
+            <element signature="e#1687#1725#1" expanded="true" />
+            <element signature="e#1921#1953#1" expanded="true" />
+            <element signature="e#1994#2024#1" expanded="true" />
+            <element signature="e#2063#2115#1" expanded="true" />
+            <element signature="e#2176#2225#1" expanded="true" />
+            <element signature="e#2283#2321#1" expanded="true" />
+            <element signature="e#2371#2407#1" expanded="true" />
+            <element signature="e#2456#2491#1" expanded="true" />
+            <element signature="e#2539#2574#1" expanded="true" />
+            <element signature="e#2725#2789#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="20" selection-end-line="26" selection-end-column="38" />
         </state>
       </provider>
     </entry>
