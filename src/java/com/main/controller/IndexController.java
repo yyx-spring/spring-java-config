@@ -1,8 +1,6 @@
 package com.main.controller;
 
-import com.main.config.DataSourceConfig;
-import com.main.config.RootConfig;
-import com.main.config.WebConfig;
+import com.main.service.CommonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,13 +14,7 @@ public class IndexController {
 */
 
     @Autowired
-    DataSourceConfig dataSourceConfig;
-    @Autowired
-    RootConfig rootConfig;
-    @Autowired
-    WebConfig webConfig;
-//    @Autowired
-//    PropertySourcesPlaceholderConfigurer propertySourcesPlaceholderConfigurer;
+    CommonService commonService;
     @Autowired
     ProfileController profileController;
     @Value("${spring.datasource.type}")
@@ -31,6 +23,7 @@ public class IndexController {
 
     @RequestMapping("index")
     public String index() {
+        commonService.testService();
         return "THIS IS A TEST.WELCOME" + type;
     }
 

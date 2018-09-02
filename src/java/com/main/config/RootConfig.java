@@ -1,9 +1,7 @@
 package com.main.config;
+import com.main.intercepter.LogonIntercepter;
 import org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.*;
 
 /**
  *<p>Title: RootConfig.java</p>
@@ -14,6 +12,7 @@ import org.springframework.context.annotation.Import;
  */
 @Configuration
 @Import(DataSourceConfig.class)
+@EnableAspectJAutoProxy
 public class RootConfig {
 
     @Bean

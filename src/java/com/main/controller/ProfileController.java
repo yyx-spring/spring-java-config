@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@Profile("test")
+//@Profile("test")
 //@Scope(WebApplicationContext.SCOPE_SESSION)
 public class ProfileController {
     /*@Autowired
