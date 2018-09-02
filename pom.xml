@@ -5,9 +5,30 @@
     <groupId>com.zsq.cn</groupId>
     <artifactId>spring-java-config</artifactId>
     <packaging>war</packaging>
+
     <version>0.0.1-SNAPSHOT</version>
     <name>spring Maven Webapp</name>
     <url>http://maven.apache.org</url>
+
+    <build>
+        <sourceDirectory>src</sourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <warName>${project.artifactId}</warName>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                    <webResources>
+                        <resource>
+                            <directory>webapp</directory>
+                        </resource>
+                    </webResources>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <!-- 版本 -->
     <properties>

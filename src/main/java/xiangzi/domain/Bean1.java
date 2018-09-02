@@ -1,4 +1,4 @@
-package com.main.domain;
+package xiangzi.domain;
 
 public class Bean1 {
 

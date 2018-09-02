@@ -1,12 +1,12 @@
-package com.main.controller;
+package xiangzi.controller;
 
-import com.main.config.DataSourceConfig;
-import com.main.config.RootConfig;
-import com.main.config.WebConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Profile;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import xiangzi.config.DataSourceConfig;
+import xiangzi.config.RootConfig;
+import xiangzi.config.WebConfig;
 
 
 @RestController
