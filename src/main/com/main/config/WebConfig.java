@@ -41,7 +41,7 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
     //文件上传，bean必须写name属性且必须为multipartResolver
     @Bean(name="multipartResolver")
-    protected CommonsMultipartResolver MultipartResolver() {
+    protected CommonsMultipartResolver multipartResolver() {
         CommonsMultipartResolver multipartResolver = new CommonsMultipartResolver();
         //上传中临时文件存放目录
         //multipartResolver.setUploadTempDir(new FileSystemResource("/tmp"));
