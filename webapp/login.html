@@ -1,0 +1,27 @@
+<html>
+<head><title>Login Page</title></head>
+<body onload="document.f.username.focus();">
+<h3>Login with Username and Password</h3>
+<form name="f" action="/login_form" method="POST">
+    <table>
+        <tbody>
+        <tr>
+            <td>User:</td>
+            <td><input name="u" value="" type="text"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input name="p" type="password"></td>
+        </tr>
+        <tr>
+            <td><label for="remember_me" class="inline">Remember me</label></td>
+            <td><input id="remember_me" name="remember-me" type="checkbox"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input name="submit" value="Login" type="submit"></td>
+        </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

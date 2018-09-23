@@ -22,19 +22,20 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
- *<p>Title: DruidDataSourceConfig.java</p>
- *<p>Description: 数据源属性配置</p>
- *<p>CreateDate: 2017年6月12日</p>
- *@author shen
- *@version v1.0
+ * <p>Title: DruidDataSourceConfig.java</p>
+ * <p>Description: 数据源属性配置</p>
+ * <p>CreateDate: 2017年6月12日</p>
+ *
+ * @author shen
+ * @version v1.0
  */
 @Configuration
 @PropertySource("classpath:jdbc.properties")
 //@MapperScan(basePackages="com.open.ssm.dao")  //mybatis
 public class DataSourceConfig {
 
-    @Autowired
-    Environment environment;
+   /* @Autowired
+    Environment environment;*/
 
     private final static Logger LOG = Logger.getLogger(DataSourceConfig.class);
 
@@ -99,7 +100,7 @@ public class DataSourceConfig {
     }*/
 
     @Bean     //声明其为Bean实例
-    public DataSource dataSource(){
+    public DataSource dataSource() {
         LOG.info("Initialize the data source...");
         DruidDataSource datasource = new DruidDataSource();
 
@@ -132,21 +133,21 @@ public class DataSourceConfig {
 
     //JdbcTemplate的配置
     @Bean
-    public JdbcTemplate jdbcTemplate(){
+    public JdbcTemplate jdbcTemplate() {
         JdbcTemplate jdbcTemplate = new JdbcTemplate();
         jdbcTemplate.setDataSource(dataSource());
         return jdbcTemplate;
     }
 
     @Bean
-    public NamedParameterJdbcTemplate namedParameterJdbcTemplate(){
+    public NamedParameterJdbcTemplate namedParameterJdbcTemplate() {
         NamedParameterJdbcTemplate namedParameterJdbcTemplate = new NamedParameterJdbcTemplate(dataSource());
         return namedParameterJdbcTemplate;
     }
 
     //mybatis的配置
     @Bean
-    public SqlSessionFactoryBean sqlSessionFactoryBean() throws IOException{
+    public SqlSessionFactoryBean sqlSessionFactoryBean() throws IOException {
         ResourcePatternResolver resourcePatternResolver = new PathMatchingResourcePatternResolver();
         SqlSessionFactoryBean sqlSessionFactoryBean = new SqlSessionFactoryBean();
         sqlSessionFactoryBean.setDataSource(dataSource());
@@ -164,8 +165,8 @@ public class DataSourceConfig {
         return dataSourceTransactionManager;
     }
 
-    @Bean(name="transactionInterceptor")
-    public TransactionInterceptor interceptor(){
+    @Bean(name = "transactionInterceptor")
+    public TransactionInterceptor interceptor() {
         TransactionInterceptor interceptor = new TransactionInterceptor();
         interceptor.setTransactionManager(dataSourceTransactionManager());
 
