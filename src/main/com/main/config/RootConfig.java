@@ -2,6 +2,7 @@ package com.main.config;
 
 import org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator;
 import org.springframework.context.annotation.*;
+import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
@@ -27,5 +28,17 @@ public class RootConfig {
         proxycreate.setBeanNames("*Service");
         proxycreate.setInterceptorNames("transactionInterceptor");
         return proxycreate;
+    }
+
+    /***
+     * With Spring Data Redis 2.0, those methods have been deprecated. You now need to configure using RedisStandaloneConfiguration
+     */
+    @Bean
+    public JedisConnectionFactory jedisConnectionFactory() {
+        JedisConnectionFactory cf = new JedisConnectionFactory();
+        cf.setHostName("127.0.0.1");
+        cf.setPort(7379);
+        cf.setPassword("password");
+        return cf;
     }
 }
