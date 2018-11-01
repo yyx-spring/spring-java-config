@@ -15,7 +15,7 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
  */
 
 @Configuration
-@Import({DataSourceConfig.class})
+//@Import({DataSourceConfig.class})
 @EnableAspectJAutoProxy
 @EnableWebSecurity
 @ComponentScan("com.main.*")
