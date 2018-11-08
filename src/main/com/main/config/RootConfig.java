@@ -1,7 +1,5 @@
 package com.main.config;
 
-import com.main.domain.Bean1;
-import com.main.domain.Bean2;
 import com.main.listener.JmsHandler;
 import com.main.listener.QueueMessageListener;
 import org.apache.activemq.command.ActiveMQQueue;
@@ -17,19 +15,13 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.listener.DefaultMessageListenerContainer;
 import org.springframework.jms.listener.adapter.MessageListenerAdapter;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
-import org.springframework.jms.support.converter.MessageType;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
-
-import java.util.HashMap;
-import java.util.Map;
 
 /**
  * <p>Title: RootConfig.java</p>
  * <p>Description: 配置类，用于管理ContextLoadListener创建的上下文的bean</p>
  * <p>CreateDate: 2017年6月12日</p>
  *
- * @author shen
- * @version v1.0
  */
 
 @Configuration
