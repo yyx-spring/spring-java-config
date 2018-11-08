@@ -1,7 +1,7 @@
 package com.main.listener;
 
-import com.main.domain.Bean2;
-import org.springframework.stereotype.Component;
+import java.io.Serializable;
+import java.util.Map;
 
 /**
  * @Author: yunxiang.yang
@@ -9,8 +9,20 @@ import org.springframework.stereotype.Component;
  */
 
 public class JmsHandler {
-    public void handle(Bean2 bean2) {
-        System.out.println("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX");
-        // ... implementation goes here...
+    public void handleMessage(String message) {
+        System.out.println("String:" + message);
     }
+
+    public void handleMessage(Map message) {
+        System.out.println("Map:" + message);
+    }
+
+    public void handleMessage(byte[] message) {
+        System.out.println("byte[]:" + message);
+    }
+
+    public void handleMessage(Serializable message) {
+        System.out.println("Serializable:" + message);
+    }
+
 }

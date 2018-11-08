@@ -109,7 +109,7 @@ public class RootConfig {
     public MessageListenerAdapter queueMessageListenerAdapter(JmsHandler jmsHandler) {
         MessageListenerAdapter messageListenerAdapter = new MessageListenerAdapter(jmsHandler);
 //        messageListenerAdapter.setDelegate(jmsHandler);
-        messageListenerAdapter.setDefaultListenerMethod("handleSpittleAlert");
+        messageListenerAdapter.setDefaultListenerMethod("handleMessage");
         return messageListenerAdapter;
     }
 
@@ -117,7 +117,7 @@ public class RootConfig {
     public DefaultMessageListenerContainer defaultMessageListenerContainer(ActiveMQConnectionFactory activeMQConnectionFactory, MessageListenerAdapter messageListenerAdapter, QueueMessageListener queueMessageListener, ActiveMQQueue activeMQQueue) {
         DefaultMessageListenerContainer defaultMessageListenerContainer = new DefaultMessageListenerContainer();
         defaultMessageListenerContainer.setConnectionFactory(activeMQConnectionFactory);
-        defaultMessageListenerContainer.setMessageListener(queueMessageListener);
+        defaultMessageListenerContainer.setMessageListener(messageListenerAdapter);
         defaultMessageListenerContainer.setDestination(activeMQQueue);
         return defaultMessageListenerContainer;
     }
