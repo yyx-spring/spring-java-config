@@ -1,9 +1,13 @@
 package com.main.controller;
 
 import com.main.domain.Bean1;
+import com.main.domain.Bean2;
+import com.main.service.JmsService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,6 +19,9 @@ import java.util.List;
 @Controller
 @RequestMapping("/rest")
 public class RestController {
+
+    @Autowired
+    JmsService jmsService;
 
 
     @RequestMapping(value = "/get", method = RequestMethod.GET, produces = "application/json")
@@ -33,5 +40,29 @@ public class RestController {
     public @ResponseBody
     Bean1 saveSpittle(@RequestBody Bean1 bean1) {
         return bean1;
+    }
+
+    @RequestMapping(value = "/send")
+    public @ResponseBody String send(HttpServletRequest request) {
+        jmsService.send("hello, activeMQ");
+        return "Success";
+    }
+
+    @RequestMapping(value = "/convertAndSend")
+    public @ResponseBody String convertAndSend(HttpServletRequest request) {
+        Bean2 bean2 = new Bean2();
+        jmsService.convertAndSend(bean2);
+        return "Success";
+    }
+
+
+    @RequestMapping(value = "/receive")
+    public @ResponseBody Object receive(HttpServletRequest request) {
+        return jmsService.receive();
+    }
+
+    @RequestMapping(value = "/receiveAndConvert")
+    public @ResponseBody Object receiveAndConvert(HttpServletRequest request) {
+        return jmsService.receiveAndConvert();
     }
 }

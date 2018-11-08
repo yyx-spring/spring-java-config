@@ -8,7 +8,7 @@ public class Bean1 implements Serializable {
     private String name;
     private int age;
 
-    Bean1() {
+    public Bean1() {
     }
 
     public Bean1(String name, int age) {
