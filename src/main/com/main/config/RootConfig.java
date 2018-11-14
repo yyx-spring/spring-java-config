@@ -10,11 +10,14 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.core.env.Environment;
 import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.listener.DefaultMessageListenerContainer;
 import org.springframework.jms.listener.adapter.MessageListenerAdapter;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
+import org.springframework.mail.javamail.JavaMailSender;
+import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 
 /**
@@ -101,14 +104,8 @@ public class RootConfig {
     }
 
     @Bean
-    public JmsHandler jmsHandler(){
-        return new JmsHandler();
-    }
-
-    @Bean
     public MessageListenerAdapter queueMessageListenerAdapter(JmsHandler jmsHandler) {
         MessageListenerAdapter messageListenerAdapter = new MessageListenerAdapter(jmsHandler);
-//        messageListenerAdapter.setDelegate(jmsHandler);
         messageListenerAdapter.setDefaultListenerMethod("handleMessage");
         return messageListenerAdapter;
     }
@@ -120,5 +117,26 @@ public class RootConfig {
         defaultMessageListenerContainer.setMessageListener(messageListenerAdapter);
         defaultMessageListenerContainer.setDestination(activeMQQueue);
         return defaultMessageListenerContainer;
+    }
+
+    /*@Bean
+    public JmsInvokerServiceExporter jmsInvokerServiceExporter(RpcService rpcService){
+        JmsInvokerServiceExporter jmsInvokerServiceExporter = new JmsInvokerServiceExporter();
+        jmsInvokerServiceExporter.setService(rpcService);
+        jmsInvokerServiceExporter.setServiceInterface(RpcService.class);
+        return jmsInvokerServiceExporter;
+    }*/
+
+//    Java Mail
+    @Bean
+    public JavaMailSender mailSender(Environment env) {
+        JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+//        mailSender.setHost(env.getProperty("mailserver.host"));
+        mailSender.setHost("smtp.topca.cn");
+        mailSender.setPort(25);
+//        mailSender.setProtocol("");
+        mailSender.setUsername("token@topca.cn");
+        mailSender.setPassword("Topotp2018");
+        return mailSender;
     }
 }

@@ -1,5 +1,7 @@
 package com.main.listener;
 
+import org.springframework.stereotype.Component;
+
 import java.io.Serializable;
 import java.util.Map;
 
@@ -8,6 +10,7 @@ import java.util.Map;
  * @Date: 2018/11/8 14:58
  */
 
+@Component
 public class JmsHandler {
     public void handleMessage(String message) {
         System.out.println("String:" + message);

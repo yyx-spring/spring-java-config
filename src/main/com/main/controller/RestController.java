@@ -3,6 +3,7 @@ package com.main.controller;
 import com.main.domain.Bean1;
 import com.main.domain.Bean2;
 import com.main.service.JmsService;
+import com.main.service.MailService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -22,6 +23,8 @@ public class RestController {
 
     @Autowired
     JmsService jmsService;
+    @Autowired
+    MailService mailService;
 
 
     @RequestMapping(value = "/get", method = RequestMethod.GET, produces = "application/json")
@@ -43,13 +46,15 @@ public class RestController {
     }
 
     @RequestMapping(value = "/send")
-    public @ResponseBody String send(HttpServletRequest request) {
+    public @ResponseBody
+    String send(HttpServletRequest request) {
         jmsService.send("hello, activeMQ");
         return "Success";
     }
 
     @RequestMapping(value = "/convertAndSend")
-    public @ResponseBody String convertAndSend(HttpServletRequest request) {
+    public @ResponseBody
+    String convertAndSend(HttpServletRequest request) {
         Bean2 bean2 = new Bean2();
         jmsService.convertAndSend(bean2);
         return "Success";
@@ -57,12 +62,24 @@ public class RestController {
 
 
     @RequestMapping(value = "/receive")
-    public @ResponseBody Object receive(HttpServletRequest request) {
+    public @ResponseBody
+    Object receive(HttpServletRequest request) {
         return jmsService.receive();
     }
 
     @RequestMapping(value = "/receiveAndConvert")
-    public @ResponseBody Object receiveAndConvert(HttpServletRequest request) {
+    public @ResponseBody
+    Object receiveAndConvert(HttpServletRequest request) {
         return jmsService.receiveAndConvert();
+    }
+
+    @RequestMapping("/sendSimpleMail")
+    public @ResponseBody
+    String sendSimpleEmail() {
+        String from = "token@topca.cn";
+        String to = "yunxiang.yang@topca.cn";
+        String message = "Hello World!";
+        mailService.sendSimpleEmail(from, to, message);
+        return "Success~";
     }
 }
