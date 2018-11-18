@@ -35,6 +35,7 @@ public class ApplicationExceptionHandler {
 
     @ExceptionHandler(Exception.class)
     public ModelAndView myExceptionHandler2(Exception e) {
+        e.printStackTrace();
         return new ModelAndView("500");
     }
 

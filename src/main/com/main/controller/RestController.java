@@ -82,4 +82,14 @@ public class RestController {
         mailService.sendSimpleEmail(from, to, message);
         return "Success~";
     }
+
+    @RequestMapping("/sendAttachment")
+    public @ResponseBody
+    String sendAttachment() {
+        String from = "token@topca.cn";
+        String to = "yunxiang.yang@topca.cn";
+        String message = "Hello World!";
+        mailService.sendAttachment(from, to, message);
+        return "Success~";
+    }
 }

@@ -133,8 +133,11 @@ public class RootConfig {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 //        mailSender.setHost(env.getProperty("mailserver.host"));
         mailSender.setHost("smtp.topca.cn");
+//        mailSender.setProtocol("smtps");
+//        mailSender.setPort(465);
+        mailSender.setProtocol("smtp");
         mailSender.setPort(25);
-//        mailSender.setProtocol("");
+        mailSender.setDefaultEncoding("UTF-8");
         mailSender.setUsername("token@topca.cn");
         mailSender.setPassword("Topotp2018");
         return mailSender;
