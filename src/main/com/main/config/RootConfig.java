@@ -1,5 +1,6 @@
 package com.main.config;
 
+import com.main.controller.RestController;
 import com.main.listener.JmsHandler;
 import com.main.listener.QueueMessageListener;
 import org.apache.activemq.command.ActiveMQQueue;
@@ -16,15 +17,20 @@ import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.listener.DefaultMessageListenerContainer;
 import org.springframework.jms.listener.adapter.MessageListenerAdapter;
 import org.springframework.jms.support.converter.MappingJackson2MessageConverter;
+import org.springframework.jmx.export.MBeanExporter;
+import org.springframework.jmx.export.assembler.MBeanInfoAssembler;
+import org.springframework.jmx.export.assembler.MethodNameBasedMBeanInfoAssembler;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * <p>Title: RootConfig.java</p>
  * <p>Description: 配置类，用于管理ContextLoadListener创建的上下文的bean</p>
  * <p>CreateDate: 2017年6月12日</p>
- *
  */
 
 @Configuration
@@ -127,7 +133,7 @@ public class RootConfig {
         return jmsInvokerServiceExporter;
     }*/
 
-//    Java Mail
+    //    Java Mail
     @Bean
     public JavaMailSender mailSender(Environment env) {
         JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
@@ -144,4 +150,21 @@ public class RootConfig {
     }
 
 
+//    MBean
+    @Bean
+    public MethodNameBasedMBeanInfoAssembler assembler() {
+        MethodNameBasedMBeanInfoAssembler assembler = new MethodNameBasedMBeanInfoAssembler();
+        assembler.setManagedMethods(new String[]{"getRestField", "setRestField"});
+        return assembler;
+    }
+
+    @Bean
+    public MBeanExporter mbeanExporter(RestController restController, MBeanInfoAssembler assembler) {
+        MBeanExporter exporter = new MBeanExporter();
+        Map<String, Object> beans = new HashMap<String, Object>();
+        beans.put("group:name=RestController", restController);
+        exporter.setBeans(beans);
+        exporter.setAssembler(assembler);
+        return exporter;
+    }
 }

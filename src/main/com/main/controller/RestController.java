@@ -29,6 +29,16 @@ public class RestController {
     MailService mailService;
 
 
+    private String restField = "first";
+
+    public String getRestField() {
+        return restField;
+    }
+
+    public void setRestField(String restField) {
+        this.restField = restField;
+    }
+
     @RequestMapping(value = "/get", method = RequestMethod.GET, produces = "application/json")
     public @ResponseBody
     List<Bean1> spittles(@RequestParam long max, @RequestParam(value = "count", defaultValue = "20") int count) {
@@ -99,10 +109,10 @@ public class RestController {
     @RequestMapping("/renderMsgTemplate")
     public @ResponseBody
     String renderMsgTemplate() throws Exception {
-        String message = "模板：username--{username},password--{password},age--{age}";
+        String message = "模板：username--${username},password--${password},age--${age}";
         Map<String, String> params = new HashMap<String, String>();
         params.put("username", "赵铁柱");
-        params.put("passowrd", "142508");
+        params.put("password", "142508");
         params.put("age", "98");
         String result = mailService.renderMsgTemplate(message, params);
         return result;
