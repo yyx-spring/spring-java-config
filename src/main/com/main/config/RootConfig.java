@@ -77,17 +77,6 @@ public class RootConfig {
     }
 
     @Bean
-    public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory, ActiveMQQueue activeMQQueue, MappingJackson2MessageConverter mappingJackson2MessageConverter) {
-        JmsTemplate jmsTemplate = new JmsTemplate(activeMQConnectionFactory);
-        //通过队列、主题bean设置默认目的地
-        jmsTemplate.setDefaultDestination(activeMQQueue);
-        //通过名称设置目的地
-//        jmsTemplate.setDefaultDestinationName("xiangzi.queue");
-        jmsTemplate.setMessageConverter(mappingJackson2MessageConverter);
-        return jmsTemplate;
-    }
-
-    @Bean
     public MappingJackson2MessageConverter mappingJackson2MessageConverter() {
         //org.springframework.jms.support.converter.MappingJackson2MessageConverter
         MappingJackson2MessageConverter mappingJackson2MessageConverter = new MappingJackson2MessageConverter();
@@ -101,6 +90,17 @@ public class RootConfig {
         mappingJackson2MessageConverter.setTypeIdPropertyName("Bean2");
         mappingJackson2MessageConverter.setEncoding("UTF-8");
         return mappingJackson2MessageConverter;
+    }
+
+    @Bean
+    public JmsTemplate jmsTemplate(ActiveMQConnectionFactory activeMQConnectionFactory, ActiveMQQueue activeMQQueue, MappingJackson2MessageConverter mappingJackson2MessageConverter) {
+        JmsTemplate jmsTemplate = new JmsTemplate(activeMQConnectionFactory);
+        //通过队列、主题bean设置默认目的地
+        jmsTemplate.setDefaultDestination(activeMQQueue);
+        //通过名称设置目的地
+//        jmsTemplate.setDefaultDestinationName("xiangzi.queue");
+        jmsTemplate.setMessageConverter(mappingJackson2MessageConverter);
+        return jmsTemplate;
     }
 
     @Bean
@@ -142,4 +142,6 @@ public class RootConfig {
         mailSender.setPassword("Topotp2018");
         return mailSender;
     }
+
+
 }

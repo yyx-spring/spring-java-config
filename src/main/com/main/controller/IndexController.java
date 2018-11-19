@@ -37,7 +37,7 @@ public class IndexController {
     @RequestMapping("/index1")
     public String index() {
         commonService.testService();
-        return "THIS IS A TEST.WELCOME" + type;
+        return "应用THIS IS A TEST.WELCOME" + type;
     }
 
     @RequestMapping("/getSecurityUserDetail")

@@ -3,6 +3,11 @@ package com.main.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.ByteArrayHttpMessageConverter;
+import org.springframework.http.converter.HttpMessageConverter;
+import org.springframework.http.converter.StringHttpMessageConverter;
+import org.springframework.http.converter.support.AllEncompassingFormHttpMessageConverter;
+import org.springframework.http.converter.xml.SourceHttpMessageConverter;
 import org.springframework.web.multipart.commons.CommonsMultipartResolver;
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
@@ -10,6 +15,10 @@ import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
+
+import javax.xml.transform.Source;
+import java.nio.charset.Charset;
+import java.util.List;
 
 /**
  * <p>Title: WebConfig.java</p>
@@ -67,4 +76,15 @@ public class WebConfig extends WebMvcConfigurerAdapter {
         registry.addResourceHandler("/*.html", "/*.js", "/*.css").addResourceLocations("/");
     }
 
+    //自定义Spring MVC消息转换器
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        StringHttpMessageConverter stringHttpMessageConverter = new StringHttpMessageConverter(Charset.forName("utf-8"));
+        stringHttpMessageConverter.setWriteAcceptCharset(false);  // see SPR-7316
+
+        converters.add(stringHttpMessageConverter);
+        converters.add(new ByteArrayHttpMessageConverter());
+        converters.add(new SourceHttpMessageConverter<Source>());
+        converters.add(new AllEncompassingFormHttpMessageConverter());
+    }
 }

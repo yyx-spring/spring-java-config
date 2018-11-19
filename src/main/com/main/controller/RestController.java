@@ -10,7 +10,9 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @Author: yunxiang.yang
@@ -91,5 +93,18 @@ public class RestController {
         String message = "Hello World!";
         mailService.sendAttachment(from, to, message);
         return "Success~";
+    }
+
+
+    @RequestMapping("/renderMsgTemplate")
+    public @ResponseBody
+    String renderMsgTemplate() throws Exception {
+        String message = "模板：username--{username},password--{password},age--{age}";
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("username", "赵铁柱");
+        params.put("passowrd", "142508");
+        params.put("age", "98");
+        String result = mailService.renderMsgTemplate(message, params);
+        return result;
     }
 }

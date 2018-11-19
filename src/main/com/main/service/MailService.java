@@ -1,5 +1,7 @@
 package com.main.service;
 
+import groovy.text.SimpleTemplateEngine;
+import groovy.text.Template;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
@@ -9,6 +11,7 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
 import javax.mail.internet.MimeMessage;
+import java.util.Map;
 
 /**
  * @Author: yunxiang.yang
@@ -64,6 +67,17 @@ public class MailService {
             mailSender.send(message);
         } catch (Exception e) {
             e.printStackTrace();
+        }
+    }
+
+    public String renderMsgTemplate(String message, Map<String, String> params) throws Exception {
+        SimpleTemplateEngine engine = new SimpleTemplateEngine();
+        Template template = null;
+        try {
+            template = engine.createTemplate(message);
+            return template.make(params).toString();
+        } catch (Exception e) {
+            throw new Exception("渲染短信模版失败:" + e.getMessage());
         }
     }
 
