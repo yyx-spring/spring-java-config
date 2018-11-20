@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-public class LogonIntercepter {
+public class CommonAspect {
 
     @Pointcut("execution(* com.main.service.CommonService.*(..))")
     public void pointExecution(){
