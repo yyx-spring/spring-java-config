@@ -23,6 +23,16 @@ import java.util.Map;
 @RequestMapping("/rest")
 public class RestController {
 
+
+    public static final int DEFAULT_SPITTLES_PER_PAGE = 25;
+    private int spittlesPerPage = DEFAULT_SPITTLES_PER_PAGE;
+    public void setSpittlesPerPage(int spittlesPerPage) {
+        this.spittlesPerPage = spittlesPerPage;
+    }
+    public int getSpittlesPerPage() {
+        return spittlesPerPage;
+    }
+
     @Autowired
     JmsService jmsService;
     @Autowired
